@@ -433,7 +433,43 @@ footer li a{
 /**  section @media Queries  **/
 
 
-/**  section Activités à Marseille @media Queries  **/
+/**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+
+    .sec-droite{
+      margin-bottom: 2em;
+    }
+
+    .articles-gauche img{
+      width: 100%;
+      height: auto;
+    }
+
+    .sec-gauche{
+      background-color: #FFF;
+    }
+
+}
+
+@media screen and (min-width: 679px) and (max-width: 1024px){
+
+  .hebergements-marseille{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .populaires{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+}
+
+
+
+/**  section Activités à Marseille @media Queries - Smarphones, tablettes desktop **/
 
 
 @media screen and (min-width: 454px) and (max-width: 678px){
@@ -514,7 +550,7 @@ footer li a{
 
 
 
-/** Styles Footer - @media Queries  **/
+/** Styles Footer - @media Queries - Smarphones, Tablettes et desktop  **/
 
 @media screen and (min-width: 454px) and (max-width: 678px) {
 
