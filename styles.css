@@ -434,3 +434,63 @@ footer li a{
   color: black;
 }
 
+/**  section @media Queries  **/
+
+
+
+
+/** Styles Footer - @media Queries  **/
+
+@media screen and (min-width: 454px) and (max-width: 678px) {
+
+
+  footer{
+    min-width: 20em;
+  }
+
+  footer{
+    margin-top:1.25em ;
+    width: auto;
+  }
+
+  footer h4{
+  margin-left: 0;
+  font-size: 0.8em;
+}
+
+  footer ul{
+    position: relative;
+    right: 40px;
+  }
+
+
+  .sec-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .sec-footer div {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+}
+
+@media screen and (min-width: 679px) and (max-width: 1024px){
+
+  .sec-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sec-footer h4{
+    display: block;
+    width: 100%;
+  }
+
+
+}
+
