@@ -256,10 +256,6 @@ label .fa-map-marker-alt{
   margin-right: 3em;
 }
 
-.soleil, .hote, .blanc{
-  position: relative;
-  top: 1.5em;
-}
 .fas{
   color: #0065FC;
   font-size: 12px;
@@ -436,6 +432,51 @@ footer li a{
 
 /**  section @media Queries  **/
 
+
+/**  section Activités à Marseille @media Queries  **/
+
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+
+  .cont-activites-marseille{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .haut img, .bas img{
+    width: 18em;
+    height: 9em ;
+    border-radius: 10px;
+    margin: 0px;
+
+  }
+
+  .vieux-port img, .calanques img{
+  width: 18em;
+  height: 9em;
+  border-radius: 10px;
+
+}
+
+.calanques, .bas, .vieux-port{
+  margin-bottom: 1.87em;
+}
+.calanques, .calanques img{
+  flex-grow: 1;
+  width: 100%;
+}
+
+.activites, .activites img{
+  flex-grow: 1;
+  width: 100%;
+}
+.test, .test img{
+  flex-grow: 1;
+  width: 100%;
+}
+
+}
 
 
 
