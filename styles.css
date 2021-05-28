@@ -156,6 +156,41 @@ label .fa-map-marker-alt{
 }
 
 
+
+/** Styles Hébergements à Marseilles **/
+
+.hebergements-marseille{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.sec-gauche img{
+  width: 10em;
+}
+
+.sec-droite img{
+  width: 7em;
+  height: 8em;
+}
+
+
+
+
+
+
+.sec-droite{
+  background-color: #0065FC;
+}
+
+.heberg figure{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
 /** Styles Activités Marseilles **/
 
 .activites-marseille{
