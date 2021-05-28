@@ -445,7 +445,7 @@ footer li a{
   }
 
   .haut img, .bas img{
-    width: 18em;
+    width: 50%;
     height: 9em ;
     border-radius: 10px;
     margin: 0px;
@@ -453,7 +453,7 @@ footer li a{
   }
 
   .vieux-port img, .calanques img{
-  width: 18em;
+  width: 50%;
   height: 9em;
   border-radius: 10px;
 
@@ -481,6 +481,36 @@ footer li a{
 }
 
 }
+
+
+@media screen and (min-width: 679px) and (max-width: 1024px){
+
+  .activites-gauche{
+    margin-bottom: 2em;
+
+  }
+
+  .activites-gauche{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vieux-port img, .calanques img{
+    width: 100%;
+
+  }
+
+  .activites-droites{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .haut img, .bas img{
+    width: 100%;
+  }
+
+}
+
 
 
 
