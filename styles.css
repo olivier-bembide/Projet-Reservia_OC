@@ -165,31 +165,158 @@ label .fa-map-marker-alt{
 }
 
 .sec-gauche img{
-  width: 10em;
+  width: 12.9em;
+  border-radius:1.25em 1.25em 0em 0em ;
 }
 
 .sec-droite img{
   width: 7em;
-  height: 8em;
+  height: 7em;
+  border-radius: 0.625em 0em 0em 0.625em;
 }
 
-
-
-
-
-
-.sec-droite{
-  background-color: #0065FC;
+.de-la-mer img, .chez-amina img{
+  height: 7em;
 }
 
-.heberg figure{
+.hebergement figure{
+  margin:0;
+}
+
+.hebergement{
+  margin: 0.5em;
+  border-radius: 20px;
+}
+
+.articles-gauche{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.populaires{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.titre-populaires{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+
+}
+
+.sec-droite{
+  margin-left: 0;
+}
+
+.sec-gauche figcaption{
+  margin-left: 0.5em;
+}
+.sec-gauche figcaption p{
+  line-height: 0.7em;
+  margin-top: 5px;
+  color: #000;
+  font-size: 0.7em;
+}
+
+.sec-gauche{
+  margin-right: 1.2em;
+}
+
+.sec-gauche, .sec-droite{
+  background-color: #f2f2f2;
+}
 
 
+.sec-droite figcaption p{
+  line-height: 1em;
+  font-size: 0.7em;
+}
 
+.sec-gauche article a, .sec-droite article a{
+  text-decoration: none;
+}
+
+.heberg{
+  margin-bottom: 1em;
+}
+
+.hebergements-marseille figcaption p:nth-child(1){
+  font-weight: bold;
+  color: #000;
+}
+
+.sec-droite figcaption p:nth-child(2){
+  color: #000;
+}
+
+.sec-droite figcaption{
+  margin-right: 3em;
+}
+
+.soleil, .hote, .blanc{
+  position: relative;
+  top: 1.5em;
+}
+.fas{
+  color: #0065FC;
+  font-size: 12px;
+}
+
+.hotel-du-port{
+  border-radius: 10px 10px;
+
+}
+
+.sec-gauche figure{
+  border-radius: 1.25em 1.25em;
+  background-color:#FFF;
+  padding: 3px;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sec-droite figure{
+  border-radius: 1.25em 1.25em;
+  background-color:#FFF;
+  padding: 5px;
+}
+
+.etoiles-la-cannebiere :nth-child(5), .etoiles-les-mouettes :nth-child(5), .le-panier :nth-child(5){
+  color:#F2F2F2;
+}
+
+.etoiles-de-la-mer :nth-child(4), .etoiles-de-la-mer :nth-child(5){
+  color:#F2F2F2;
+}
+
+.chambres-hote :nth-child(5), .bleu-blanc :nth-child(5){
+  color: #f2f2f2;
+}
+
+.fa-chart-line{
+  color:#000;
+  font-size: 20px
+}
+
+.afficher{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 30px;
+  position: relative;
+  top: 5px;
+}
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+  .hebergements-marseille{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}
 
 /** Styles Activités Marseilles **/
 
