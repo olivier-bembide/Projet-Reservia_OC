@@ -149,6 +149,11 @@ label .fa-map-marker-alt{
   font-size: 0.7em;
 }
 
+.bouton:hover{
+  transition-duration: 1s;
+  background-color: #F2F2F2;
+}
+
 
 
 /** Styles Hébergements à Marseilles **/
