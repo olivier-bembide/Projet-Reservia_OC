@@ -8,8 +8,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 /** Styles Menu de navigation **/
 
   header{
@@ -124,10 +122,6 @@ label .fa-map-marker-alt{
 
 .filtre_fami{
   width: 115px;
-}
-
-.fa-child{
-  margin-right: 10px;
 }
 
 .filtre_roman{
@@ -462,6 +456,40 @@ footer li a{
     }
 }
 
+
+/**  section Filtres @media Queries - Smarphones, tablettes desktop **/
+
+  @media screen and (min-width: 454px) and (max-width: 678px){
+
+
+  .containeur-filtre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .filtre_roman, .filtre_animaux{
+    margin-left: 5em;
+  }
+
+  .bouton{
+    margin-top: 0.5em;
+    margin-right: 1em;
+  }
+
+  form{
+    margin-bottom: 2em;
+  }
+
+  .filtre_fami{
+    width:10em;
+  }
+
+  .fa-child{
+  margin-right: 25px;
+}
+
+}
 
 
 /**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
