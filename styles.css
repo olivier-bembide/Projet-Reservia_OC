@@ -433,6 +433,37 @@ footer li a{
 /**  section @media Queries  **/
 
 
+/**  section Menu de navigation @media Queries - Smarphones, tablettes desktop **/
+
+@media screen and (min-width: 454px) and (max-width: 678px){
+
+  header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li:nth-child(3){
+    position: relative;
+    bottom: 3em;
+    right: 4em;
+    }
+
+    header{
+      margin: 0 auto;
+      width: 100%;
+    }
+}
+
+
+
 /**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
 
 @media screen and (min-width: 454px) and (max-width: 678px){
