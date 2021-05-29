@@ -455,14 +455,41 @@ footer li a{
 @media screen and (min-width: 679px) and (max-width: 1024px){
 
   .hebergements-marseille{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .populaires{
-    display:flex;
+  .articles-droite{
+    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .sec-droite{
+    margin-bottom: 1em;
+  }
+
+  .articles-droite figure{
+    margin: 0;
+  }
+  .sec-droite{
+    order:1;
+  }
+
+  .sec-gauche{
+    order:0;
+  }
+
+  .heberg{
+    margin-right: 0.5em;
+  }
+
+  .sec-droite img{
+    width: 5em;
+  }
+
+  .hebergement{
+    margin-right: 1.5em;
   }
 
 }
