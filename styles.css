@@ -88,9 +88,11 @@ label .fa-map-marker-alt{
   font-size: 15px;
 }
 
-input[type="placeholder"]{
-  color: red;
+.fa-search{
+ position: absolute;
+ left: -99999px;
 }
+
 
 /** Styles Filtres **/
 
@@ -497,6 +499,28 @@ footer li a{
   .fa-child{
   margin-right: 25px;
 }
+
+.bouton1{
+  display: none;
+}
+
+.texte-header{
+  margin-bottom: 2.5em;
+}
+
+.fa-search{
+  position: absolute;
+  left: 290px;
+  margin-top: 0;
+  font-size: 1em;
+  width: 1em;
+  background-color: #0065FC;
+  color: #FFF;
+  height: 0.73em;
+  padding: 0.73em;
+  border-radius: 10px;
+}
+
 
 }
 
