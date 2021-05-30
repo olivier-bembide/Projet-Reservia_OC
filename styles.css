@@ -88,6 +88,10 @@ label .fa-map-marker-alt{
   font-size: 15px;
 }
 
+input[type="placeholder"]{
+  color: red;
+}
+
 /** Styles Filtres **/
 
 
