@@ -369,12 +369,14 @@ label .fa-map-marker-alt {
   width: 100%;
   height: 18em;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .haut img, .bas img{
   width: 100%;
   height: 7.3em ;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .activites .haut{
@@ -442,10 +444,13 @@ footer li a {
   color: black;
 }
 
+
+
+
 /**  section @media Queries  **/
 
 /**  section Menu de navigation @media Queries - Smarphones, tablettes desktop **/
-/*
+
 @media screen and (min-width: 454px) and (max-width: 678px){
 
   header{
@@ -472,11 +477,11 @@ footer li a {
       width: 100%;
     }
 }
-*/
+
 
 /**  section Filtres @media Queries - Smarphones, tablettes desktop **/
 
-/*
+
   @media screen and (min-width: 454px) and (max-width: 678px){
 
 
@@ -531,24 +536,45 @@ footer li a {
 
 }
 
-*/
+
 
 /**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
 
-/*
-@media screen and (min-width: 454px) and (max-width: 678px){
 
+@media screen and (min-width: 300px) and (max-width: 678px){
+
+  .hebergements-marseille{
+    margin:0 auto;
+    width: 100%;
+  }
     .sec-droite{
       margin-bottom: 2em;
     }
 
     .articles-gauche img{
+
       width: 100%;
       height: auto;
     }
 
     .sec-gauche{
       background-color: #FFF;
+    }
+
+    .sec-gauche .titre{
+      margin-left: 2em;
+      font-size: 1em;
+    }
+
+    .populaires{
+      display:flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .heberg{
+      margin-bottom: 2em;
     }
 
 }
@@ -599,54 +625,44 @@ footer li a {
 
 }
 
-*/
 
 /**  section Activités à Marseille @media Queries - Smarphones, tablettes desktop **/
 
-/*
-@media screen and (min-width: 454px) and (max-width: 678px){
 
-  .cont-activites-marseille{
-    display:flex;
+@media screen and (min-width: 300px) and (max-width: 678px){
+
+  .activites-marseille{
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .haut img, .bas img{
-    width: 50%;
-    height: 9em ;
-    border-radius: 10px;
-    margin: 0px;
-
+  .activites-gauche{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
   }
 
-  .vieux-port img, .calanques img{
-  width: 50%;
-  height: 9em;
-  border-radius: 10px;
+  .activites-droites{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
 
-}
+  .activites-gauche .vieux-port{
+    margin-bottom: 2em;
+  }
 
-.calanques, .bas, .vieux-port{
-  margin-bottom: 1.87em;
-}
-.calanques, .calanques img{
-  flex-grow: 1;
-  width: 100%;
-}
+  .activites-droites .calanques{
+    margin-bottom: 2em;
+  }
 
-.activites, .activites img{
-  flex-grow: 1;
-  width: 100%;
-}
-.test, .test img{
-  flex-grow: 1;
-  width: 100%;
-}
-
-.titre-activites{
+  .titre-activites{
   margin-left: 2em;
 }
+
 
 }
 
@@ -678,12 +694,11 @@ footer li a {
   }
 
 }
-*/
+
 
 /** Styles Footer - @media Queries - Smarphones, Tablettes et desktop  **/
 
-/*
-@media screen and (min-width: 454px) and (max-width: 678px) {
+@media screen and (min-width: 300px) and (max-width: 678px) {
 
 
   footer{
@@ -736,4 +751,3 @@ footer li a {
 
 }
 
-*/
