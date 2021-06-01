@@ -663,34 +663,22 @@ footer li a {
   margin-left: 2em;
 }
 
-
 }
 
 
 @media screen and (min-width: 679px) and (max-width: 1024px){
 
-  .activites-gauche{
+
+  .activites-marseille{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .activites-gauche article{
     margin-bottom: 2em;
-
-  }
-
-  .activites-gauche{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .vieux-port img, .calanques img{
-    width: 100%;
-
-  }
-
-  .activites-droites{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .haut img, .bas img{
-    width: 100%;
   }
 
 }
