@@ -546,6 +546,7 @@ footer li a {
   .hebergements-marseille{
     margin:0 auto;
     width: 100%;
+    margin-bottom: 2em;
   }
     .sec-droite{
       margin-bottom: 2em;
@@ -575,6 +576,10 @@ footer li a {
 
     .heberg{
       margin-bottom: 2em;
+    }
+
+    .sec-gauche img{
+      height: 150px;
     }
 
 }
@@ -661,7 +666,7 @@ footer li a {
 
   .titre-activites{
   margin-left: 2em;
-}
+  }
 
 }
 
