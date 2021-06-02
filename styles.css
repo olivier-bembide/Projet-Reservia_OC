@@ -595,6 +595,8 @@ footer li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .sec-droite{
@@ -613,7 +615,9 @@ footer li a {
   }
 
   .heberg{
-    margin-right: 0.5em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
   }
 
   .sec-droite img{
@@ -624,8 +628,12 @@ footer li a {
     margin-right: 1.5em;
   }
 
- .titre-populaires{
+  .titre-populaires{
   margin-right: 20em;
+  }
+
+  .populaires figcaption{
+    margin-left: 1.5em;
   }
 
 }
