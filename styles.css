@@ -451,13 +451,15 @@ footer li a {
 
 /**  section Menu de navigation @media Queries - Smarphones, tablettes desktop **/
 
-@media screen and (min-width: 454px) and (max-width: 678px){
+@media screen and (min-width: 320px) and (max-width: 560px){
 
   header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1.3em;
+    width: 100%;
+    margin: 0 auto;
   }
 
   nav ul {
@@ -465,6 +467,13 @@ footer li a {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
+  nav ul li{
+    margin: 8px 15px;
+    width: 100%;
+    flex-grow: 1;
+  }
+
 
   nav ul li:nth-child(3){
     position: relative;
@@ -482,7 +491,7 @@ footer li a {
 /**  section Filtres @media Queries - Smarphones, tablettes desktop **/
 
 
-  @media screen and (min-width: 454px) and (max-width: 678px){
+  @media screen and (min-width: 320px) and (max-width: 678px){
 
 
   .containeur-filtre{
