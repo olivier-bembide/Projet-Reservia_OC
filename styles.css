@@ -16,6 +16,7 @@ header {
   justify-content: space-between;
 }
 
+
 header img {
   width: 5em;
 }
@@ -562,7 +563,6 @@ footer li a {
     }
 
     .articles-gauche img{
-
       width: 100%;
       height: auto;
     }
