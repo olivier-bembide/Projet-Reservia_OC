@@ -5,6 +5,7 @@ body {
   font-size: 1rem;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /** Styles Menu de navigation **/
@@ -16,7 +17,6 @@ header {
   justify-content: space-between;
 }
 
-
 header img {
   width: 5em;
 }
@@ -25,23 +25,33 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 nav ul li {
   text-decoration: none;
   list-style-type: none;
-  margin: 20px 30px;
+  margin: 0px 30px;
 }
 
-nav > ul > li a {
-  text-decoration: none;
+nav ul li::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -17px;
+  height: 2px;
+  width: 100%;
+  background-color: transparent;
+}
+
+nav ul li:hover::before {
+  background-color: #0065fc;
+}
+
+nav ul li a {
   color: #0065fc;
   font-size: 0.8em;
-}
-
-nav > ul > li a:hover {
-  text-decoration: overline;
-  height: 50px;
+  text-decoration: none;
 }
 
 .noir a {
@@ -113,34 +123,15 @@ label .fa-map-marker-alt {
   border: 1px solid #f2f2f2;
   height: 50px;
   margin: 30px 5px 20px 5px;
+  padding:0;
+  padding-right: 15px;
 }
 
-.filtre_eco {
-  width: 150px;
-}
-
-.fa-money-bill-wave {
-  margin-right: 15px;
-}
-
-.filtre_fami {
-  width: 115px;
-}
-
-.filtre_roman {
-  width: 160px;
-}
-
-.fa-heart {
-  margin-right: 25px;
-}
-
-.filtre_animaux {
-  width: 200px;
-}
-
-.fa-child {
-  margin-right: 25px;
+.logofiltre {
+  padding: 18px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  width:12px;
 }
 
 .info {
@@ -316,101 +307,97 @@ label .fa-map-marker-alt {
 
 /** Styles Activités Marseilles **/
 
-.activites-marseille{
+.activites-marseille {
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   margin: 0 auto;
 }
 
-.activites-gauche{
+.activites-gauche {
   display: grid;
   grid-template-columns: 50% 50%;
-  width:100%;
+  width: 100%;
 }
 
-.activites-gauche article{
-  margin:0;
-
+.activites-gauche article {
+  margin: 0;
 }
 
-.activites-gauche figure{
-  margin:0;
-
+.activites-gauche figure {
+  margin: 0;
 }
 
-.activites-droites figure{
-  margin:0;
-
+.activites-droites figure {
+  margin: 0;
 }
 
-.activites-gauche article{
+.activites-gauche article {
   margin-right: 1.5em;
 }
 
-.activites-droites .calanques{
+.activites-droites .calanques {
   margin-right: 1.5em;
 }
 
-.activites-droites article{
+.activites-droites article {
   margin-left: 1.5em;
 }
 
-.activites-droites article{
-  margin:0;
+.activites-droites article {
+  margin: 0;
 }
 
-.activites-droites{
-  display:grid;
+.activites-droites {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
 }
 
-.vieux-port img, .calanques img{
+.vieux-port img,
+.calanques img {
   width: 100%;
   height: 18em;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.haut img, .bas img{
+.haut img,
+.bas img {
   width: 100%;
-  height: 7.3em ;
+  height: 7.3em;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.activites .haut{
+.activites .haut {
   margin-bottom: 1.5em;
 }
-.card1 figcaption p, .card2 figcaption p{
+.card1 figcaption p,
+.card2 figcaption p {
   font-size: 0.7em;
   margin: 0.5em;
-  color:#000;
+  color: #000;
   font-weight: bold;
 }
 
-
-
-.card1{
-  border:1px solid #FFF;
+.card1 {
+  border: 1px solid #fff;
   border-radius: 15px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
-.card2{
-  border:1px solid #FFF;
+.card2 {
+  border: 1px solid #fff;
   border-radius: 15px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
-
 }
 
-.activites a{
+.activites a {
   text-decoration: none;
 }
-
 
 /** Styles Footer **/
 
@@ -445,16 +432,12 @@ footer li a {
   color: black;
 }
 
-
-
-
 /**  section @media Queries  **/
 
 /**  section Menu de navigation @media Queries - Smarphones, tablettes desktop **/
 
-@media screen and (min-width: 320px) and (max-width: 560px){
-
-  header{
+@media screen and (min-width: 320px) and (max-width: 560px) {
+  header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -469,138 +452,126 @@ footer li a {
     flex-wrap: nowrap;
   }
 
-  nav ul li{
+  nav ul li {
     margin: 8px 15px;
     width: 100%;
     flex-grow: 1;
   }
 
-
-  nav ul li:nth-child(3){
+  nav ul li:nth-child(3) {
     position: relative;
     bottom: 3em;
     right: 4em;
-    }
+  }
 
-    header{
-      margin: 0 auto;
-      width: 100%;
-    }
+  header {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
-
 
 /**  section Filtres @media Queries - Smarphones, tablettes desktop **/
 
-
-  @media screen and (min-width: 320px) and (max-width: 678px){
-
-
-  .containeur-filtre{
+@media screen and (min-width: 320px) and (max-width: 678px) {
+  .containeur-filtre {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .filtre_roman, .filtre_animaux{
+  .filtre_roman,
+  .filtre_animaux {
     margin-left: 5em;
   }
 
-  .bouton{
+  .bouton {
     margin-top: 0.5em;
     margin-right: 1em;
   }
 
-  form{
+  form {
     margin-bottom: 2em;
   }
 
-  .filtre_fami{
-    width:10em;
+  .filtre_fami {
+    width: 10em;
   }
 
-  .fa-child{
-  margin-right: 25px;
+  .fa-child {
+    margin-right: 25px;
+  }
+
+  .bouton1 {
+    display: none;
+  }
+
+  .texte-header {
+    margin-bottom: 2.5em;
+  }
+
+  .fa-search {
+    position: absolute;
+    left: 290px;
+    margin-top: 0;
+    font-size: 1em;
+    width: 1em;
+    background-color: #0065fc;
+    color: #fff;
+    height: 0.73em;
+    padding: 0.73em;
+    border-radius: 10px;
+  }
 }
-
-.bouton1{
-  display: none;
-}
-
-.texte-header{
-  margin-bottom: 2.5em;
-}
-
-.fa-search{
-  position: absolute;
-  left: 290px;
-  margin-top: 0;
-  font-size: 1em;
-  width: 1em;
-  background-color: #0065FC;
-  color: #FFF;
-  height: 0.73em;
-  padding: 0.73em;
-  border-radius: 10px;
-}
-
-
-}
-
-
 
 /**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
 
-
-@media screen and (min-width: 300px) and (max-width: 678px){
-
-  .hebergements-marseille{
-    margin:0 auto;
+@media screen and (min-width: 300px) and (max-width: 678px) {
+  .hebergements-marseille {
+    margin: 0 auto;
     width: 100%;
     margin-bottom: 2em;
   }
-    .sec-droite{
-      margin-bottom: 2em;
-    }
+  .sec-droite {
+    margin-bottom: 2em;
+  }
 
-    .articles-gauche img{
-      width: 100%;
-      height: auto;
-    }
+  .articles-gauche img {
+    width: 100%;
+    height: auto;
+  }
 
-    .sec-gauche{
-      background-color: #FFF;
-    }
+  .sec-gauche {
+    background-color: #fff;
+  }
 
-    .sec-gauche .titre{
-      margin-left: 2em;
-      font-size: 1em;
-    }
+  .sec-gauche .titre {
+    margin-left: 2em;
+    font-size: 1em;
+  }
 
-    .populaires{
-      display:flex;
-      flex-direction: row;
-      width: 100%;
-      margin: 0 auto;
-    }
+  .populaires {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    .heberg{
-      margin-bottom: 2em;
-    }
+  .heberg {
+    margin-bottom: 2em;
+  }
 
-    .sec-gauche img{
-      height: 150px;
-    }
-
+  .sec-gauche img {
+    height: 150px;
+  }
 }
 
-@media screen and (min-width: 679px) and (max-width: 1024px){
-
-  .hebergements-marseille{
+@media screen and (min-width: 679px) and (max-width: 1024px) {
+  .hebergements-marseille {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .articles-droite{
+  .articles-droite {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -608,128 +579,115 @@ footer li a {
     width: 100%;
   }
 
-  .sec-droite{
+  .sec-droite {
     margin-bottom: 1em;
   }
 
-  .articles-droite figure{
+  .articles-droite figure {
     margin: 0;
   }
-  .sec-droite{
-    order:1;
+  .sec-droite {
+    order: 1;
   }
 
-  .sec-gauche{
-    order:0;
+  .sec-gauche {
+    order: 0;
   }
 
-  .heberg{
+  .heberg {
     margin-right: 0;
     margin-bottom: 1em;
     margin-left: 1em;
   }
 
-  .sec-droite img{
+  .sec-droite img {
     width: 5em;
   }
 
-  .hebergement{
+  .hebergement {
     margin-right: 1.5em;
   }
 
-  .titre-populaires{
-  margin-right: 20em;
+  .titre-populaires {
+    margin-right: 20em;
   }
 
-  .populaires figcaption{
+  .populaires figcaption {
     margin-left: 1.5em;
   }
-
 }
-
 
 /**  section Activités à Marseille @media Queries - Smarphones, tablettes desktop **/
 
-
-@media screen and (min-width: 300px) and (max-width: 678px){
-
-  .activites-marseille{
+@media screen and (min-width: 300px) and (max-width: 678px) {
+  .activites-marseille {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .activites-gauche{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
-  }
-
-  .activites-droites{
+  .activites-gauche {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 2em;
   }
 
-  .activites-gauche .vieux-port{
+  .activites-droites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 2em;
   }
 
-  .activites-droites .calanques{
+  .activites-gauche .vieux-port {
     margin-bottom: 2em;
   }
 
-  .titre-activites{
-  margin-left: 2em;
+  .activites-droites .calanques {
+    margin-bottom: 2em;
   }
 
+  .titre-activites {
+    margin-left: 2em;
+  }
 }
 
-
-@media screen and (min-width: 679px) and (max-width: 1024px){
-
-
-  .activites-marseille{
-    display:flex;
+@media screen and (min-width: 679px) and (max-width: 1024px) {
+  .activites-marseille {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
   }
 
-  .activites-gauche article{
+  .activites-gauche article {
     margin-bottom: 2em;
   }
-
 }
-
 
 /** Styles Footer - @media Queries - Smarphones, Tablettes et desktop  **/
 
 @media screen and (min-width: 300px) and (max-width: 678px) {
-
-
-  footer{
+  footer {
     min-width: 20em;
   }
 
-  footer{
-    margin-top:1.25em ;
+  footer {
+    margin-top: 1.25em;
     width: auto;
   }
 
-  footer h4{
-  margin-left: 0;
-  font-size: 0.8em;
-}
+  footer h4 {
+    margin-left: 0;
+    font-size: 0.8em;
+  }
 
-  footer ul{
+  footer ul {
     position: relative;
     right: 40px;
   }
-
 
   .sec-footer {
     display: flex;
@@ -742,22 +700,17 @@ footer li a {
     width: 100%;
     margin-left: 40px;
   }
-
 }
 
-@media screen and (min-width: 679px) and (max-width: 1024px){
-
-  .sec-footer{
+@media screen and (min-width: 679px) and (max-width: 1024px) {
+  .sec-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .sec-footer h4{
+  .sec-footer h4 {
     display: block;
     width: 100%;
   }
-
-
 }
-
