@@ -149,6 +149,10 @@ label .fa-map-marker-alt {
   background-color: #f2f2f2;
 }
 
+.bout1{
+  display: flex;
+}
+
 /** Styles Hébergements à Marseilles **/
 
 .hebergements-marseille {
@@ -476,31 +480,26 @@ footer li a {
 @media screen and (min-width: 320px) and (max-width: 678px) {
   .containeur-filtre {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
-  .filtre_roman,
-  .filtre_animaux {
-    margin-left: 5em;
-  }
+  /* .filtre_roman, .filtre_animaux {
+    margin:0px;
+  } */
 
-  .bouton {
+  /* .bouton {
     margin-top: 0.5em;
     margin-right: 1em;
-  }
+  } */
 
   form {
     margin-bottom: 2em;
   }
 
-  .filtre_fami {
-    width: 10em;
-  }
-
-  .fa-child {
-    margin-right: 25px;
-  }
+  /* .fa-child {
+    margin-right: 0px;
+  } */
 
   .bouton1 {
     display: none;
@@ -522,6 +521,51 @@ footer li a {
     padding: 0.73em;
     border-radius: 10px;
   }
+
+  .bouton {
+  display: block;
+  border-radius: 30px;
+  font-size: 10px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  height: 50px;
+  /* margin: 30px 5px 20px 5px; */
+  padding:0;
+  padding-right: 15px;
+}
+
+.logofiltre{
+  width: 10px;
+}
+
+.filtre_roman, .filtre_animaux{
+  display:flex;
+   width: 155px;
+  align-items: center;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+/* .filtre_eco, .filtre_fami{
+  width: 150px;
+} */
+
+.containeur-filtre h2{
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.containeur-filtre button{
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.bout1 .filtre_eco{
+  margin-right: 0.7em;
+}
+
+
+
 }
 
 /**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
