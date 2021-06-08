@@ -205,11 +205,17 @@ label .fa-map-marker-alt {
 
 .sec-gauche {
   margin-right: 1em;
+
+}
+
+.sec-droite{
+  margin-right: 20px;
 }
 
 .sec-gauche,
 .sec-droite {
   background-color: #f2f2f2;
+  border-radius: 10px;
 }
 
 .sec-gauche figcaption {
