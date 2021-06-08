@@ -511,7 +511,7 @@ footer li a {
 
   .fa-search {
     position: absolute;
-    left: 290px;
+    left: 240px;
     margin-top: 0;
     font-size: 1em;
     width: 1em;
@@ -540,7 +540,7 @@ footer li a {
 
 .filtre_roman, .filtre_animaux{
   display:flex;
-   width: 155px;
+  width: 155px;
   align-items: center;
   font-size: 0.5em;
   font-weight: bold;
@@ -562,6 +562,26 @@ footer li a {
 
 .bout1 .filtre_eco{
   margin-right: 0.7em;
+}
+
+.navigation h1{
+  font-size: 1em;
+}
+
+.navigation{
+  margin-right:9px;
+}
+
+nav ul li a{
+  font-size: 18px;
+}
+
+header img{
+  width: 100px;
+}
+
+.recherche input{
+  width: 200px;
 }
 
 
