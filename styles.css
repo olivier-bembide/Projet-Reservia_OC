@@ -6,6 +6,7 @@ body {
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
+  margin: 0px 10px 0px 10px;
 }
 
 /** Styles Menu de navigation **/
@@ -558,11 +559,15 @@ footer li a {
 
   .heberg {
     margin-bottom: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .sec-gauche img {
     height: 150px;
   }
+
+
 }
 
 @media screen and (min-width: 679px) and (max-width: 1024px) {
@@ -631,6 +636,8 @@ footer li a {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 2em;
+    margin-left: 10px;
+    margin-right: 20px;
   }
 
   .activites-droites {
@@ -638,6 +645,10 @@ footer li a {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 2em;
+  }
+
+  .notre-dame .haut, .notre-dame .bas{
+    margin-right: 25px;
   }
 
   .activites-gauche .vieux-port {
