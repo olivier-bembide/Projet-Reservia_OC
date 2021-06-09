@@ -754,6 +754,10 @@ header img{
   .activites-gauche article {
     margin-bottom: 2em;
   }
+
+  .activites-droites{
+    margin-right: 25px;
+  }
 }
 
 /** Styles Footer - @media Queries - Smarphones, Tablettes et desktop  **/
@@ -799,5 +803,13 @@ header img{
   .sec-footer h4 {
     display: block;
     width: 100%;
+  }
+
+  footer{
+    margin-right: 30px;
+  }
+
+  .heberg{
+    margin-right: 6px;
   }
 }
