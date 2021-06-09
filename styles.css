@@ -812,4 +812,8 @@ header img{
   .heberg{
     margin-right: 6px;
   }
+
+  footer ul li{
+    font-size: 0.6em;
+  }
 }
