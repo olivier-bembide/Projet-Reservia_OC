@@ -425,6 +425,7 @@ label .fa-map-marker-alt {
 footer {
   background-color: #f2f2f2;
   margin-top: 50px;
+  margin-right: 20px; 
 }
 
 footer h4 {
