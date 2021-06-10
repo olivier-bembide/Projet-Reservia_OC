@@ -606,6 +606,7 @@ header img{
     width: 100%;
     margin-bottom: 2em;
   }
+
   .sec-droite {
     margin-bottom: 2em;
   }
@@ -625,7 +626,7 @@ header img{
 
   .sec-gauche .titre {
     margin-left: 2em;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .populaires {
