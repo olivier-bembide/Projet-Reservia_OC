@@ -494,22 +494,9 @@ footer li a {
     flex-wrap: nowrap;
   }
 
-  /* .filtre_roman, .filtre_animaux {
-    margin:0px;
-  } */
-
-  /* .bouton {
-    margin-top: 0.5em;
-    margin-right: 1em;
-  } */
-
   form {
     margin-bottom: 2em;
   }
-
-  /* .fa-child {
-    margin-right: 0px;
-  } */
 
   .bouton1 {
     display: none;
@@ -555,10 +542,6 @@ footer li a {
   font-size: 0.5em;
   font-weight: bold;
 }
-
-/* .filtre_eco, .filtre_fami{
-  width: 150px;
-} */
 
 .containeur-filtre h2{
   margin: 0;
@@ -694,7 +677,7 @@ header img{
   }
 
   .sec-gauche{
-    width: 100%; 
+    width: 100%;
   }
 
   .titre-populaires {
@@ -722,9 +705,6 @@ header img{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* margin-bottom: 2.5em; */
-    /* margin-left: 10px; */
-    /* margin-right: 20px; */
     width: 95%;
     margin: 0 auto;
   }
@@ -758,10 +738,6 @@ header img{
   .pomegues{
     margin-bottom: 1.5em;
   }
-
-  /* .notre-dame .haut, .notre-dame .bas{
-    margin-right: 25px;
-  } */
 
   .activites-gauche .vieux-port {
     margin-bottom: 2em;
