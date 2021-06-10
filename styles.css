@@ -328,7 +328,7 @@ label .fa-map-marker-alt {
 .activites-gauche {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 100%;
+  width: 97%;
 }
 
 .activites-gauche article {
@@ -348,7 +348,7 @@ label .fa-map-marker-alt {
 }
 
 .activites-droites .calanques {
-  margin-right: 1.5em;
+  margin-right: 1.3em;
 }
 
 .activites-droites article {
@@ -362,7 +362,7 @@ label .fa-map-marker-alt {
 .activites-droites {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  width: 97%;
 }
 
 .vieux-port img,
