@@ -693,8 +693,8 @@ header img{
     width: 5em;
   }
 
-  .hebergement {
-    margin-right: 1.5em;
+  .sec-gauche{
+    width: 100%; 
   }
 
   .titre-populaires {
@@ -790,7 +790,11 @@ header img{
   }
 
   .activites-droites{
-    margin-right: 25px;
+    margin-right: 0px;
+  }
+
+  .pomegues article{
+    margin-right: 0;
   }
 }
 
