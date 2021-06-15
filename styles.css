@@ -78,6 +78,13 @@ h1 {
   flex-wrap: nowrap;
 }
 
+form input:focus{
+  border: 1px solid #f2f2f2;
+}
+
+div .recherche{
+  display: inline-block;
+}
 .bouton1 {
   background-color: #0065fc;
   display: inline-block;
