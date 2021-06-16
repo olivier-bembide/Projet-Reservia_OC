@@ -457,8 +457,8 @@ footer li a {
 /**  section Menu de navigation @media Queries - Smarphones, tablettes desktop **/
 
 @media screen and (min-width: 320px) and (max-width: 560px) {
-
-  .containeur-generale, footer{
+  .containeur-generale,
+  footer {
     width: 95%;
     margin-right: 0;
     overflow-x: hidden;
@@ -477,18 +477,30 @@ footer li a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
   }
 
   nav ul li {
     margin: 8px 15px;
     width: 100%;
-    flex-grow: 1;
   }
 
   nav ul li:nth-child(3) {
+    position: absolute;
+    /* bottom: 3em; */
+    left: 8em;
+    bottom: 70px;
+  }
+
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2) {
+    margin-left: 0;
+  }
+
+  nav ul li:nth-child(1) {
     position: relative;
-    bottom: 3em;
-    right: 4em;
+    right: 15px;
   }
 
   header {
@@ -508,24 +520,23 @@ footer li a {
     width: 100%;
   }
 
-  div .activites-gauche, div .activites-droites {
+  div .activites-gauche,
+  div .activites-droites {
     margin: 0;
     width: 100%;
   }
 
-  div .sec-droite{
+  div .sec-droite {
     margin: 0 auto;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-
 }
 
 /**  section Filtres @media Queries - Smarphones, tablettes desktop **/
 
 @media screen and (min-width: 320px) and (max-width: 678px) {
-
   .containeur-filtre {
     display: flex;
     flex-direction: column;
@@ -619,7 +630,6 @@ footer li a {
 /**  section Hébergement à Marseille @media Queries - Smarphones, tablettes desktop **/
 
 @media screen and (min-width: 320px) and (max-width: 678px) {
-
   .hebergements-marseille {
     margin: 0 auto;
     width: 100%;
@@ -669,21 +679,25 @@ footer li a {
     width: 25%;
   }
 
-  section .navigation{
+  section .navigation {
     margin: 0;
+  }
+
+  .titre {
+    margin: 40px 0px 30px 0px;
+    font-weight: bold;
   }
 }
 
 @media screen and (min-width: 679px) and (max-width: 1024px) {
-
-   .containeur-generale{
+  .containeur-generale {
     width: 97.5%;
     margin-right: 0;
     overflow-x: hidden;
     overflow-y: hidden;
   }
 
-  footer{
+  footer {
     width: 100%;
     margin-right: 0;
     overflow-x: hidden;
@@ -744,7 +758,6 @@ footer li a {
 /**  section Activités à Marseille @media Queries - Smarphones, tablettes desktop **/
 
 @media screen and (min-width: 320px) and (max-width: 678px) {
-
   .activites-marseille {
     display: flex;
     flex-direction: column;
@@ -812,10 +825,10 @@ footer li a {
   }
 
   .notre-dame article {
-  border: 1px solid #FFF;
-  background-color: #fff;
-  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
-}
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @media screen and (min-width: 679px) and (max-width: 1024px) {
@@ -843,7 +856,6 @@ footer li a {
 /** Styles Footer - @media Queries - Smarphones, Tablettes et desktop  **/
 
 @media screen and (min-width: 320px) and (max-width: 678px) {
-
   footer {
     margin-top: 1.25em;
     width: 100%;
