@@ -720,6 +720,14 @@ header img{
     margin-right: 0;
   }
 
+  .activites-gauche figure img{
+    height: 200px;
+  }
+
+  .activites-droites figure img{
+    height: 200px;
+  }
+
   .activites-droites .calanques{
     margin-right: 0;
   }
