@@ -686,6 +686,8 @@ footer li a {
   .titre {
     margin: 40px 0px 30px 0px;
     font-weight: bold;
+    position:relative;
+    right: 30px;
   }
 }
 
@@ -820,14 +822,17 @@ footer li a {
     margin-bottom: 2em;
   }
 
-  .titre-activites {
-    margin-left: 2em;
-  }
-
   .notre-dame article {
     border: 1px solid #fff;
     background-color: #fff;
     box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .titre-activites{
+    margin-left: 2em;
+    position: relative;
+    right: 40px;
+    font-size: 20px;
   }
 }
 
