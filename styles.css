@@ -507,7 +507,6 @@ footer li a {
     margin: 0 auto;
     width: 100%;
   }
-
   .hebergements-marseille {
     width: 100%;
   }
@@ -531,6 +530,10 @@ footer li a {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .barre a {
+    background-color: aqua;
   }
 }
 
@@ -686,8 +689,20 @@ footer li a {
   .titre {
     margin: 40px 0px 30px 0px;
     font-weight: bold;
-    position:relative;
+    position: relative;
     right: 30px;
+  }
+
+  .heberg img {
+    width: 45%;
+  }
+
+  .heberg figcaption {
+    margin-right: 0;
+  }
+
+  .heberg figcaption p {
+    font-size: 0.7em;
   }
 }
 
@@ -828,7 +843,7 @@ footer li a {
     box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .titre-activites{
+  .titre-activites {
     margin-left: 2em;
     position: relative;
     right: 40px;
