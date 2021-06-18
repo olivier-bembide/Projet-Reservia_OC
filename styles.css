@@ -464,49 +464,29 @@ footer li a {
     overflow-x: hidden;
     overflow-y: hidden;
   }
-  header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1.3em;
-    width: 100%;
-    margin: 0 auto;
-  }
 
   nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    position: relative;
-    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   nav ul li {
-    margin: 8px 15px;
-    width: 100%;
+    margin: 10px 20px;
   }
 
   nav ul li:nth-child(3) {
-    position: absolute;
-    /* bottom: 3em; */
-    left: 8em;
-    bottom: 70px;
-  }
-
-  nav ul li:nth-child(1),
-  nav ul li:nth-child(2) {
-    margin-left: 0;
-  }
-
-  nav ul li:nth-child(1) {
     position: relative;
-    right: 15px;
+    left: 210px;
+    bottom: 125px;
+    font-weight: bold;
   }
 
-  header {
-    margin: 0 auto;
-    width: 100%;
+  .barre-heberg a{
+    border-bottom: 2px solid #0065FC;
+    height: 2px;
+    padding: 10px;
   }
+
   .hebergements-marseille {
     width: 100%;
   }
@@ -530,10 +510,6 @@ footer li a {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .barre a {
-    background-color: aqua;
   }
 }
 
@@ -567,7 +543,7 @@ footer li a {
     background-color: #0065fc;
     color: #fff;
     height: 0.73em;
-    padding: 0.73em;
+    padding: 0.75em;
     border-radius: 10px;
   }
 
@@ -694,15 +670,17 @@ footer li a {
   }
 
   .heberg img {
-    width: 45%;
+    width: 42%;
   }
 
   .heberg figcaption {
     margin-right: 0;
+    position: relative;
+    right: 20px;
   }
 
   .heberg figcaption p {
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 }
 
